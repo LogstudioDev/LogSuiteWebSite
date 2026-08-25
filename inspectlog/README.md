@@ -24,6 +24,6 @@ Open `http://localhost:8080/inspectlog/`.
 | `privacy.html` | Privacy Policy |
 | `terms.html` | Terms of Use |
 
-Live (GitHub Pages): https://abecheng.github.io/LogSuiteWebSite/inspectlog/
+Live (GitHub Pages): https://logstudiodev.github.io/LogSuiteWebSite/inspectlog/
 
 See parent [`../README.md`](../README.md) for suite-wide Pages setup.

@@ -22,6 +22,6 @@ Open `http://localhost:8080/autolog/`.
 | `privacy.html` | Privacy Policy |
 | `terms.html` | Terms of Use |
 
-Live (GitHub Pages): https://abecheng.github.io/LogSuiteWebSite/autolog/
+Live (GitHub Pages): https://logstudiodev.github.io/LogSuiteWebSite/autolog/
 
 See parent [`../README.md`](../README.md) for suite-wide Pages setup.

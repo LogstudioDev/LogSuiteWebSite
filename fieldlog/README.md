@@ -11,7 +11,7 @@ python3 -m http.server 8080
 
 Open: `http://localhost:8080/fieldlog/`
 
-Live (GitHub Pages): https://abecheng.github.io/LogSuiteWebSite/fieldlog/
+Live (GitHub Pages): https://logstudiodev.github.io/LogSuiteWebSite/fieldlog/
 
 ## Brand
 
