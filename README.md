@@ -39,6 +39,6 @@ AI API keys are configured in each app (BYOK). Guides open official Gemini / Ope
 
 ## GitHub Pages
 
-Point Pages at the `/LogSuiteWebSite` folder on `main`, **or** sync this folder to a dedicated Pages repo (e.g. [abecheng/LogSuiteWebSite](https://github.com/LogstudioDev/LogSuiteWebSite)) as the site root.
+Published from [LogstudioDev/LogSuiteWebSite](https://github.com/LogstudioDev/LogSuiteWebSite). Live site: https://logstudiodev.github.io/LogSuiteWebSite/
 
 All asset paths are relative so subdirectory deploys work.
