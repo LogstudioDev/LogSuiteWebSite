@@ -7,15 +7,15 @@
   --fog: #f7f8fa;
   --fog-dim: #5c6570;
   --paper: #ffffff;
-  --bronze: #ed960e;
-  --bronze-deep: #c4780a;
+  --bronze: #f5a623;
+  --bronze-deep: #e09212;
   --line: rgba(26, 28, 31, 0.1);
   --shadow: 0 24px 48px rgba(26, 28, 31, 0.1);
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Manrope", "Segoe UI", sans-serif;
   --max: 1120px;
   --radius-device: 28px;
-  --amber-wash: rgba(237, 150, 14, 0.12);
+  --amber-wash: rgba(245, 166, 35, 0.12);
 }
 
 *,
