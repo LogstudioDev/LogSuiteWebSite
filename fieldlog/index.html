@@ -197,9 +197,42 @@
         <p>The site you just walked is already on your phone.</p>
       </div>
 
-      <div class="screens-empty" data-reveal>
-        <p class="screens-empty__label">App screenshots</p>
-        <p>Product screenshots are coming soon. Drop <code>1.png</code>–<code>6.png</code> into <code>assets/images/</code> when ready.</p>
+      <div class="screen-carousel" data-reveal data-carousel>
+        <button class="screen-carousel__nav screen-carousel__nav--prev" type="button" aria-label="Previous screenshot">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+
+        <div class="screen-carousel__viewport">
+          <ul class="screen-carousel__track">
+            <li class="screen-carousel__slide is-active">
+              <img src="assets/images/1.png" alt="FieldLog screenshot 1" width="800" height="1632" />
+            </li>
+            <li class="screen-carousel__slide">
+              <img src="assets/images/2.png" alt="FieldLog screenshot 2" width="800" height="1632" />
+            </li>
+            <li class="screen-carousel__slide">
+              <img src="assets/images/3.png" alt="FieldLog screenshot 3" width="800" height="1632" />
+            </li>
+            <li class="screen-carousel__slide">
+              <img src="assets/images/4.png" alt="FieldLog screenshot 4" width="800" height="1632" />
+            </li>
+            <li class="screen-carousel__slide">
+              <img src="assets/images/5.png" alt="FieldLog screenshot 5" width="800" height="1632" />
+            </li>
+            <li class="screen-carousel__slide">
+              <img src="assets/images/6.png" alt="FieldLog screenshot 6" width="800" height="1632" />
+            </li>
+            <li class="screen-carousel__slide">
+              <img src="assets/images/7.png" alt="FieldLog screenshot 7" width="800" height="1632" />
+            </li>
+          </ul>
+        </div>
+
+        <button class="screen-carousel__nav screen-carousel__nav--next" type="button" aria-label="Next screenshot">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+
+        <div class="screen-carousel__dots" role="tablist" aria-label="Screenshot pages"></div>
       </div>
     </section>
 
