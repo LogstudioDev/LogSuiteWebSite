@@ -11,8 +11,8 @@
   --line-strong: rgba(232, 237, 246, 0.16);
   --accent: #c9a46c;
   --accent-bright: #e2c48a;
-  --font-display: "Inter", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
-  --font-body: "Inter", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Instrument Sans", "Segoe UI", sans-serif;
   --max: 72rem;
 }
 
@@ -114,9 +114,9 @@ a {
 
 .brand__name {
   font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 1.15rem;
-  letter-spacing: -0.04em;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: -0.03em;
 }
 
 .lang {
@@ -252,10 +252,10 @@ a {
 .hero h1 {
   margin: 0 0 1.1rem;
   font-family: var(--font-display);
-  font-weight: 900;
-  font-size: clamp(2.55rem, 6.8vw, 4.5rem);
-  line-height: 1.02;
-  letter-spacing: -0.055em;
+  font-weight: 600;
+  font-size: clamp(2.45rem, 6.4vw, 4.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
   color: #fff;
   text-wrap: balance;
 }
@@ -342,8 +342,8 @@ a {
   margin: 0 0 0.65rem;
   font-family: var(--font-display);
   font-size: clamp(1.9rem, 3.6vw, 2.65rem);
-  font-weight: 800;
-  letter-spacing: -0.04em;
+  font-weight: 600;
+  letter-spacing: -0.03em;
   color: #fff;
 }
 
@@ -435,8 +435,8 @@ a.app-dir__item:focus-visible {
 .app-dir__name {
   font-family: var(--font-display);
   font-size: 1.22rem;
-  font-weight: 800;
-  letter-spacing: -0.035em;
+  font-weight: 600;
+  letter-spacing: -0.025em;
   color: #fff;
   transition: color 180ms ease;
   line-height: 1.2;
@@ -476,8 +476,8 @@ a.app-dir__item:focus-visible {
   margin: 0;
   font-family: var(--font-display);
   font-size: clamp(1.45rem, 2.6vw, 1.85rem);
-  font-weight: 800;
-  letter-spacing: -0.035em;
+  font-weight: 600;
+  letter-spacing: -0.025em;
   color: #fff;
 }
 
@@ -538,7 +538,7 @@ a.app-dir__item:focus-visible {
   align-items: center;
   gap: 0.45rem;
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 600;
   color: var(--ink-soft);
 }
 
