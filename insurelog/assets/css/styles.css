@@ -180,8 +180,8 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Person + clipboard: nudge crop down so the subject sits a bit lower */
-  object-position: 58% 65%;
+  object-position: 72% 48%;
+  filter: saturate(1.04) contrast(1.03);
 }
 
 .hero__veil {
@@ -189,8 +189,14 @@ a:hover {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(105deg, rgba(244, 243, 241, 0.95) 0%, rgba(244, 243, 241, 0.84) 32%, rgba(244, 243, 241, 0.32) 58%, rgba(244, 243, 241, 0.06) 100%),
-    linear-gradient(to top, rgba(244, 243, 241, 0.72) 0%, transparent 44%);
+    linear-gradient(
+      105deg,
+      rgba(244, 243, 241, 0.93) 0%,
+      rgba(244, 243, 241, 0.78) 34%,
+      rgba(244, 243, 241, 0.28) 60%,
+      rgba(244, 243, 241, 0.05) 100%
+    ),
+    linear-gradient(to top, rgba(244, 243, 241, 0.45) 0%, transparent 40%);
   pointer-events: none;
 }
 
