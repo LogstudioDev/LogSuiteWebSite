@@ -175,18 +175,20 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transform: scale(1.08);
+  filter: brightness(1.35) contrast(1.22) saturate(1.35);
 }
 
 .hero__grid {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(232, 237, 246, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(232, 237, 246, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(232, 237, 246, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 237, 246, 0.04) 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: radial-gradient(ellipse 80% 75% at 50% 45%, #000 15%, transparent 75%);
   -webkit-mask-image: radial-gradient(ellipse 80% 75% at 50% 45%, #000 15%, transparent 75%);
-  opacity: 0.55;
+  opacity: 0.35;
   pointer-events: none;
 }
 
@@ -196,16 +198,26 @@ a {
   pointer-events: none;
   background:
     radial-gradient(
-      ellipse 55% 50% at 50% 42%,
-      rgba(9, 10, 15, 0.28) 0%,
-      rgba(9, 10, 15, 0.55) 58%,
-      rgba(9, 10, 15, 0.78) 100%
+      ellipse 48% 42% at 50% 40%,
+      rgba(9, 10, 15, 0.12) 0%,
+      rgba(9, 10, 15, 0.32) 55%,
+      rgba(9, 10, 15, 0.62) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(9, 10, 15, 0.45) 0%,
-      rgba(9, 10, 15, 0.2) 42%,
-      rgba(9, 10, 15, 0.72) 100%
+      rgba(9, 10, 15, 0.28) 0%,
+      rgba(9, 10, 15, 0.08) 45%,
+      rgba(9, 10, 15, 0.55) 100%
+    ),
+    radial-gradient(
+      ellipse 55% 35% at 28% 48%,
+      rgba(201, 164, 108, 0.22),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 45% 32% at 78% 52%,
+      rgba(110, 160, 220, 0.18),
+      transparent 70%
     );
 }
 
