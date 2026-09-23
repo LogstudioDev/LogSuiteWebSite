@@ -147,7 +147,7 @@ a:hover {
   background: color-mix(in srgb, var(--bronze) 22%, transparent);
 }
 
-/* Hero — full-bleed banner + light overlay copy */
+/* Hero — full-bleed dark clinical banner */
 
 .hero {
   position: relative;
@@ -159,6 +159,7 @@ a:hover {
     clamp(1.25rem, 4vw, 2.5rem)
     clamp(2.5rem, 6vh, 3.5rem);
   overflow: hidden;
+  color: #f4faf7;
 }
 
 .hero__banner {
@@ -171,7 +172,9 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 68% 35%;
+  object-position: 58% 42%;
+  transform: scale(1.06);
+  filter: brightness(1.12) contrast(1.12) saturate(1.15);
 }
 
 .hero__veil {
@@ -179,8 +182,19 @@ a:hover {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(105deg, rgba(243, 248, 246, 0.94) 0%, rgba(243, 248, 246, 0.82) 34%, rgba(243, 248, 246, 0.28) 62%, rgba(243, 248, 246, 0.08) 100%),
-    linear-gradient(to top, rgba(243, 248, 246, 0.75) 0%, transparent 42%);
+    linear-gradient(
+      105deg,
+      rgba(6, 22, 18, 0.88) 0%,
+      rgba(6, 22, 18, 0.72) 36%,
+      rgba(6, 22, 18, 0.35) 62%,
+      rgba(6, 22, 18, 0.28) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(6, 22, 18, 0.35) 0%,
+      transparent 45%,
+      rgba(6, 22, 18, 0.55) 100%
+    );
   pointer-events: none;
 }
 
@@ -197,25 +211,26 @@ a:hover {
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1;
-  color: var(--ink);
+  color: #fff;
 }
 
 .hero h1 {
   margin: 0 0 1rem;
-  max-width: 16ch;
+  max-width: 18ch;
   font-family: var(--font-display);
   font-size: clamp(1.85rem, 3.6vw, 2.75rem);
   font-weight: 500;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  color: color-mix(in srgb, var(--ink) 88%, var(--bronze-deep));
+  color: rgba(244, 250, 247, 0.94);
 }
 
 .lede {
   margin: 0 0 1.75rem;
   max-width: 34rem;
   font-size: 1.08rem;
-  color: var(--ink-mid);
+  color: #fff;
+  text-shadow: 0 1px 16px rgba(0, 0, 0, 0.35);
 }
 
 .cta-row {
@@ -254,15 +269,16 @@ a:hover {
 }
 
 .btn--ghost {
-  border: 1px solid color-mix(in srgb, var(--ink) 22%, transparent);
-  color: var(--ink);
-  background: color-mix(in srgb, var(--paper) 70%, transparent);
+  border: 1px solid rgba(244, 250, 247, 0.35);
+  color: #fff;
+  background: rgba(6, 22, 18, 0.35);
   backdrop-filter: blur(8px);
 }
 
 .btn--ghost:hover {
-  border-color: color-mix(in srgb, var(--bronze) 70%, transparent);
-  background: var(--paper);
+  border-color: rgba(74, 222, 128, 0.7);
+  background: rgba(6, 22, 18, 0.55);
+  color: #fff;
 }
 
 .btn__store-icon {
@@ -833,8 +849,13 @@ a:hover {
 
   .hero__veil {
     background:
-      linear-gradient(180deg, rgba(243, 248, 246, 0.92) 0%, rgba(243, 248, 246, 0.78) 48%, rgba(243, 248, 246, 0.55) 100%),
-      linear-gradient(to top, rgba(243, 248, 246, 0.7) 0%, transparent 45%);
+      linear-gradient(
+        180deg,
+        rgba(6, 22, 18, 0.82) 0%,
+        rgba(6, 22, 18, 0.68) 48%,
+        rgba(6, 22, 18, 0.55) 100%
+      ),
+      linear-gradient(to top, rgba(6, 22, 18, 0.55) 0%, transparent 45%);
   }
 
   .hero h1 {
