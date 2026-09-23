@@ -148,7 +148,7 @@ a:hover {
   background: color-mix(in srgb, var(--bronze) 22%, transparent);
 }
 
-/* Hero — full-bleed banner + light overlay copy */
+/* Hero — full-bleed dusk American home */
 
 .hero {
   position: relative;
@@ -160,6 +160,7 @@ a:hover {
     clamp(1.25rem, 4vw, 2.5rem)
     clamp(2.5rem, 6vh, 3.5rem);
   overflow: hidden;
+  color: #f5f7fb;
 }
 
 .hero__banner {
@@ -172,7 +173,9 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 72% 28%;
+  object-position: 62% 45%;
+  transform: scale(1.05);
+  filter: brightness(1.08) contrast(1.1) saturate(1.12);
 }
 
 .hero__veil {
@@ -180,8 +183,19 @@ a:hover {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(105deg, rgba(247, 248, 250, 0.94) 0%, rgba(247, 248, 250, 0.82) 34%, rgba(247, 248, 250, 0.28) 62%, rgba(247, 248, 250, 0.08) 100%),
-    linear-gradient(to top, rgba(247, 248, 250, 0.75) 0%, transparent 42%);
+    linear-gradient(
+      105deg,
+      rgba(8, 14, 28, 0.86) 0%,
+      rgba(8, 14, 28, 0.68) 38%,
+      rgba(8, 14, 28, 0.28) 64%,
+      rgba(8, 14, 28, 0.18) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(8, 14, 28, 0.35) 0%,
+      transparent 48%,
+      rgba(8, 14, 28, 0.5) 100%
+    );
   pointer-events: none;
 }
 
@@ -198,18 +212,26 @@ a:hover {
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1;
-  color: var(--ink);
+  color: #fff;
 }
 
 .hero h1 {
   margin: 0 0 1rem;
-  max-width: 16ch;
+  max-width: 18ch;
   font-family: var(--font-display);
   font-size: clamp(1.85rem, 3.6vw, 2.75rem);
   font-weight: 500;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  color: color-mix(in srgb, var(--ink) 88%, var(--bronze-deep));
+  color: rgba(245, 247, 251, 0.95);
+}
+
+.hero .lede {
+  margin: 0 0 1.75rem;
+  max-width: 34rem;
+  font-size: 1.08rem;
+  color: #fff;
+  text-shadow: 0 1px 16px rgba(0, 0, 0, 0.4);
 }
 
 .lede {
@@ -265,6 +287,18 @@ a:hover {
   border-color: color-mix(in srgb, var(--bronze) 70%, transparent);
   background: var(--paper);
   color: var(--ink);
+}
+
+.hero .btn--ghost {
+  border: 1px solid rgba(245, 247, 251, 0.38);
+  color: #fff;
+  background: rgba(8, 14, 28, 0.38);
+}
+
+.hero .btn--ghost:hover {
+  border-color: rgba(120, 168, 230, 0.75);
+  background: rgba(8, 14, 28, 0.55);
+  color: #fff;
 }
 
 .btn__store-icon {
@@ -835,8 +869,13 @@ a:hover {
 
   .hero__veil {
     background:
-      linear-gradient(180deg, rgba(247, 248, 250, 0.92) 0%, rgba(247, 248, 250, 0.78) 48%, rgba(247, 248, 250, 0.55) 100%),
-      linear-gradient(to top, rgba(247, 248, 250, 0.7) 0%, transparent 45%);
+      linear-gradient(
+        180deg,
+        rgba(8, 14, 28, 0.82) 0%,
+        rgba(8, 14, 28, 0.68) 48%,
+        rgba(8, 14, 28, 0.55) 100%
+      ),
+      linear-gradient(to top, rgba(8, 14, 28, 0.5) 0%, transparent 45%);
   }
 
   .hero h1 {
