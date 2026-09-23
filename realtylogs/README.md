@@ -2,7 +2,7 @@
 
 Marketing site for **RealtyLogs**, nested under LogSuite:
 
-`LogSuiteWebSite/realtylog/`
+`LogSuiteWebSite/realtylogs/`
 
 ## Local preview
 
@@ -11,7 +11,7 @@ cd LogSuiteWebSite
 python3 -m http.server 8080
 ```
 
-Open `http://localhost:8080/realtylog/`.
+Open `http://localhost:8080/realtylogs/`.
 
 ## Pages
 
@@ -22,6 +22,6 @@ Open `http://localhost:8080/realtylog/`.
 | `privacy.html` | Privacy Policy |
 | `terms.html` | Terms of Use |
 
-Live (GitHub Pages): https://logstudiodev.github.io/LogSuiteWebSite/realtylog/
+Live (GitHub Pages): https://logstudiodev.github.io/LogSuiteWebSite/realtylogs/
 
 See parent [`../README.md`](../README.md) for suite-wide Pages setup.

@@ -9,9 +9,9 @@ cd LogSuiteWebSite
 python3 -m http.server 8080
 ```
 
-Open: `http://localhost:8080/fieldlog/`
+Open: `http://localhost:8080/fieldslog/`
 
-Live (GitHub Pages): https://logstudiodev.github.io/LogSuiteWebSite/fieldlog/
+Live (GitHub Pages): https://logstudiodev.github.io/LogSuiteWebSite/fieldslog/
 
 ## Brand
 
