@@ -225,12 +225,19 @@ a:hover {
   color: rgba(244, 250, 247, 0.94);
 }
 
-.lede {
+.hero .lede {
   margin: 0 0 1.75rem;
   max-width: 34rem;
   font-size: 1.08rem;
   color: #fff;
   text-shadow: 0 1px 16px rgba(0, 0, 0, 0.35);
+}
+
+.lede {
+  margin: 0 0 1.75rem;
+  max-width: 34rem;
+  font-size: 1.08rem;
+  color: var(--ink-mid);
 }
 
 .cta-row {
@@ -269,13 +276,24 @@ a:hover {
 }
 
 .btn--ghost {
-  border: 1px solid rgba(244, 250, 247, 0.35);
-  color: #fff;
-  background: rgba(6, 22, 18, 0.35);
+  border: 1px solid color-mix(in srgb, var(--ink) 22%, transparent);
+  color: var(--ink);
+  background: color-mix(in srgb, var(--paper) 70%, transparent);
   backdrop-filter: blur(8px);
 }
 
 .btn--ghost:hover {
+  border-color: color-mix(in srgb, var(--bronze) 70%, transparent);
+  background: var(--paper);
+}
+
+.hero .btn--ghost {
+  border: 1px solid rgba(244, 250, 247, 0.35);
+  color: #fff;
+  background: rgba(6, 22, 18, 0.35);
+}
+
+.hero .btn--ghost:hover {
   border-color: rgba(74, 222, 128, 0.7);
   background: rgba(6, 22, 18, 0.55);
   color: #fff;
