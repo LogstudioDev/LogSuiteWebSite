@@ -171,9 +171,9 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 62% 40%;
-  transform: scale(1.04);
-  filter: saturate(1.12) contrast(1.06);
+  object-position: 68% 35%;
+  transform: none;
+  filter: saturate(1.05) contrast(1.04);
 }
 
 .hero__veil {
@@ -183,12 +183,12 @@ a:hover {
   background:
     linear-gradient(
       105deg,
-      rgba(243, 248, 246, 0.92) 0%,
-      rgba(243, 248, 246, 0.78) 36%,
-      rgba(243, 248, 246, 0.28) 62%,
-      rgba(243, 248, 246, 0.06) 100%
+      rgba(243, 248, 246, 0.9) 0%,
+      rgba(243, 248, 246, 0.72) 34%,
+      rgba(243, 248, 246, 0.22) 58%,
+      rgba(243, 248, 246, 0.04) 100%
     ),
-    linear-gradient(to top, rgba(243, 248, 246, 0.55) 0%, transparent 42%);
+    linear-gradient(to top, rgba(243, 248, 246, 0.45) 0%, transparent 40%);
   pointer-events: none;
 }
 
