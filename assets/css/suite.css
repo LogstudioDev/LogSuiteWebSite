@@ -146,7 +146,7 @@ a {
   color: #fff;
 }
 
-/* Hero — hard tool presence: grid + real UI */
+/* Hero — photo atmosphere + centered type */
 
 .hero {
   position: relative;
@@ -165,24 +165,48 @@ a {
   background: #090a0f;
 }
 
+.hero__banner {
+  position: absolute;
+  inset: 0;
+}
+
+.hero__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .hero__grid {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(232, 237, 246, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(232, 237, 246, 0.045) 1px, transparent 1px);
+    linear-gradient(rgba(232, 237, 246, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 237, 246, 0.03) 1px, transparent 1px);
   background-size: 56px 56px;
-  mask-image: radial-gradient(ellipse 75% 70% at 50% 40%, #000 20%, transparent 78%);
-  -webkit-mask-image: radial-gradient(ellipse 75% 70% at 50% 40%, #000 20%, transparent 78%);
+  mask-image: radial-gradient(ellipse 80% 75% at 50% 45%, #000 15%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 75% at 50% 45%, #000 15%, transparent 75%);
+  opacity: 0.55;
+  pointer-events: none;
 }
 
-.hero__glow {
+.hero__veil {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 50% 40% at 50% 18%, rgba(201, 164, 108, 0.14), transparent 70%),
-    radial-gradient(ellipse 40% 35% at 72% 70%, rgba(90, 130, 180, 0.08), transparent 70%);
   pointer-events: none;
+  background:
+    radial-gradient(
+      ellipse 55% 50% at 50% 42%,
+      rgba(9, 10, 15, 0.28) 0%,
+      rgba(9, 10, 15, 0.55) 58%,
+      rgba(9, 10, 15, 0.78) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(9, 10, 15, 0.45) 0%,
+      rgba(9, 10, 15, 0.2) 42%,
+      rgba(9, 10, 15, 0.72) 100%
+    );
 }
 
 .hero__stage {
