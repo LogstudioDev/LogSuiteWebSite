@@ -171,9 +171,9 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 62% 45%;
-  transform: scale(1.04);
-  filter: saturate(1.06) contrast(1.04);
+  object-position: 68% 40%;
+  transform: scale(1.03);
+  filter: saturate(1.05) contrast(1.03);
 }
 
 .hero__veil {
