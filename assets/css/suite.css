@@ -150,10 +150,10 @@ a {
 
 .hero {
   position: relative;
-  min-height: min(88vh, 42rem);
+  min-height: min(72vh, 34rem);
   display: grid;
-  align-items: end;
-  padding: 5rem 0 4.5rem;
+  align-items: center;
+  padding: 2.75rem 0 3.25rem;
   overflow: hidden;
   color: #f4f7fc;
 }
@@ -168,7 +168,8 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 72% center;
+  /* Pull columns + wave left so left side isn’t empty black */
+  object-position: 38% center;
 }
 
 .hero__veil {
@@ -178,17 +179,17 @@ a {
   pointer-events: none;
   background:
     linear-gradient(
-      105deg,
-      rgba(5, 8, 16, 0.88) 0%,
-      rgba(5, 8, 16, 0.62) 42%,
-      rgba(5, 8, 16, 0.28) 68%,
-      rgba(5, 8, 16, 0.42) 100%
+      100deg,
+      rgba(5, 8, 16, 0.72) 0%,
+      rgba(5, 8, 16, 0.48) 36%,
+      rgba(5, 8, 16, 0.22) 62%,
+      rgba(5, 8, 16, 0.3) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(5, 8, 16, 0.28) 0%,
-      rgba(5, 8, 16, 0.08) 45%,
-      rgba(5, 8, 16, 0.72) 100%
+      rgba(5, 8, 16, 0.22) 0%,
+      rgba(5, 8, 16, 0.06) 50%,
+      rgba(5, 8, 16, 0.58) 100%
     );
 }
 
@@ -572,27 +573,27 @@ a.app-dir__item:focus-visible {
 
 @media (max-width: 640px) {
   .hero {
-    min-height: min(78vh, 34rem);
-    padding: 3.5rem 0 3rem;
+    min-height: min(68vh, 30rem);
+    padding: 2.25rem 0 2.75rem;
     align-items: center;
   }
 
   .hero__banner img {
-    object-position: 80% center;
+    object-position: 42% center;
   }
 
   .hero__veil {
     background:
       linear-gradient(
         180deg,
-        rgba(5, 8, 16, 0.55) 0%,
-        rgba(5, 8, 16, 0.72) 45%,
-        rgba(5, 8, 16, 0.9) 100%
+        rgba(5, 8, 16, 0.4) 0%,
+        rgba(5, 8, 16, 0.5) 50%,
+        rgba(5, 8, 16, 0.78) 100%
       ),
       linear-gradient(
         90deg,
-        rgba(5, 8, 16, 0.75) 0%,
-        rgba(5, 8, 16, 0.35) 100%
+        rgba(5, 8, 16, 0.55) 0%,
+        rgba(5, 8, 16, 0.28) 100%
       );
   }
 
