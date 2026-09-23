@@ -179,16 +179,16 @@ a {
   background:
     linear-gradient(
       105deg,
-      rgba(5, 8, 16, 0.92) 0%,
-      rgba(5, 8, 16, 0.78) 38%,
-      rgba(5, 8, 16, 0.45) 62%,
-      rgba(5, 8, 16, 0.55) 100%
+      rgba(5, 8, 16, 0.88) 0%,
+      rgba(5, 8, 16, 0.62) 42%,
+      rgba(5, 8, 16, 0.28) 68%,
+      rgba(5, 8, 16, 0.42) 100%
     ),
     linear-gradient(
       180deg,
-      rgba(5, 8, 16, 0.35) 0%,
-      rgba(5, 8, 16, 0.15) 40%,
-      rgba(5, 8, 16, 0.75) 100%
+      rgba(5, 8, 16, 0.28) 0%,
+      rgba(5, 8, 16, 0.08) 45%,
+      rgba(5, 8, 16, 0.72) 100%
     );
 }
 
@@ -506,6 +506,12 @@ a.app-dir__item:focus-visible {
 }
 
 /* Motion */
+
+/* Above-the-fold never waits on reveal */
+.hero__stage {
+  opacity: 1;
+  transform: none;
+}
 
 [data-reveal] {
   opacity: 0;
