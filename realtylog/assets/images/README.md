@@ -2,7 +2,7 @@
 
 | File | Use |
 | --- | --- |
-| `logo.png` | Site / favicon logo (from AppIcon / `docs/RealtyLog/logo.png`) |
+| `logo.png` | Site / favicon logo (from AppIcon / `docs/RealtyLogs/logo.png`) |
 | `banner.jpg` | Homepage hero full-bleed background |
 | `1.png` … `6.png` | “Built around your book” carousel slides |
 

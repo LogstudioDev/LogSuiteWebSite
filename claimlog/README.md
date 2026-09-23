@@ -19,4 +19,4 @@ Live (GitHub Pages): https://logstudiodev.github.io/LogSuiteWebSite/claimlog/
 - Estimate accent: `#d97706` (amber, optional)
 - Logo: `assets/images/logo.png` (from `UI/ClaimLog/logo.png`)
 
-**≠ InsureLog** (brokerage needs / renewals).
+**≠ PolicyLog** (brokerage needs / renewals).

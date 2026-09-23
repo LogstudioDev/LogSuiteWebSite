@@ -1,6 +1,6 @@
-# FieldLog website
+# FieldsLog website
 
-Marketing site for **FieldLog** (solo GC / remodel site walks).
+Marketing site for **FieldsLog** (solo GC / remodel site walks).
 
 ## Preview
 
@@ -16,4 +16,4 @@ Live (GitHub Pages): https://logstudiodev.github.io/LogSuiteWebSite/fieldlog/
 ## Brand
 
 - Accent: `#1e3a5f` (Steel Navy)
-- Logo: `assets/images/logo.png` (from `UI/FieldLog/logo.png`)
+- Logo: `assets/images/logo.png` (from `UI/FieldsLog/logo.png`)

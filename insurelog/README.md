@@ -1,6 +1,6 @@
-# InsureLog website
+# PolicyLog website
 
-Marketing site for **InsureLog** (independent insurance agent / needs & renewals).
+Marketing site for **PolicyLog** (independent insurance agent / needs & renewals).
 
 ## Preview
 
@@ -17,6 +17,6 @@ Live (GitHub Pages): https://logstudiodev.github.io/LogSuiteWebSite/insurelog/
 
 - Logo / marketing accent: `#c01425` (Insure deep red)
 - App chrome tint: system Accent blue (matrix convention)
-- Logo: `assets/images/logo.png` (from `UI/InsureLog/logo.png` / `docs/InsureLog/logo.png`)
+- Logo: `assets/images/logo.png` (from `UI/PolicyLog/logo.png` / `docs/PolicyLog/logo.png`)
 
 **≠ ClaimLog** (field loss inspection / adjuster work paper).

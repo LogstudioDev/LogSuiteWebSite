@@ -10,8 +10,8 @@ When `1.png`–`6.png` are missing, the landing page shows an empty-state note i
 
 ## Banner
 
-Waiting on the InsureLog hero photo. Until then the homepage uses a logo-red wash (`.hero--no-banner`) with no `banner.jpg`.
+Waiting on the PolicyLog hero photo. Until then the homepage uses a logo-red wash (`.hero--no-banner`) with no `banner.jpg`.
 
 ## Logo
 
-- From `UI/InsureLog/logo.png` (deep red `#c01425`).
+- From `UI/PolicyLog/logo.png` (deep red `#c01425`).

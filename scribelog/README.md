@@ -1,6 +1,6 @@
-# ScribeLog Website
+# ChartLog Website
 
-Marketing site for **ScribeLog**, nested under LogSuite:
+Marketing site for **ChartLog**, nested under LogSuite:
 
 `LogSuiteWebSite/scribelog/`
 

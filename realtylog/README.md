@@ -1,6 +1,6 @@
-# RealtyLog Website
+# RealtyLogs Website
 
-Marketing site for **RealtyLog**, nested under LogSuite:
+Marketing site for **RealtyLogs**, nested under LogSuite:
 
 `LogSuiteWebSite/realtylog/`
 

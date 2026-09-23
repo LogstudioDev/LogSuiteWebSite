@@ -1,6 +1,6 @@
-# AutoLog Website
+# LotLog Website
 
-Marketing site for **AutoLog**, nested under LogSuite:
+Marketing site for **LotLog**, nested under LogSuite:
 
 `LogSuiteWebSite/autolog/`
 

@@ -13,13 +13,13 @@ Open:
 
 - `http://localhost:8080/` — suite landing
 - `http://localhost:8080/matterlog/` — MatterLog
-- `http://localhost:8080/scribelog/` — ScribeLog
-- `http://localhost:8080/realtylog/` — RealtyLog
-- `http://localhost:8080/autolog/` — AutoLog
+- `http://localhost:8080/scribelog/` — ChartLog
+- `http://localhost:8080/realtylog/` — RealtyLogs
+- `http://localhost:8080/autolog/` — LotLog
 - `http://localhost:8080/inspectlog/` — InspectLog
-- `http://localhost:8080/fieldlog/` — FieldLog
+- `http://localhost:8080/fieldlog/` — FieldsLog
 - `http://localhost:8080/claimlog/` — ClaimLog
-- `http://localhost:8080/insurelog/` — InsureLog
+- `http://localhost:8080/insurelog/` — PolicyLog
 
 ## Layout
 
@@ -27,13 +27,13 @@ Open:
 | --- | --- |
 | `index.html` | LogSuite series LP |
 | `matterlog/` | MatterLog marketing site |
-| `scribelog/` | ScribeLog marketing site |
-| `realtylog/` | RealtyLog marketing site |
-| `autolog/` | AutoLog marketing site |
+| `scribelog/` | ChartLog marketing site |
+| `realtylog/` | RealtyLogs marketing site |
+| `autolog/` | LotLog marketing site |
 | `inspectlog/` | InspectLog marketing site |
-| `fieldlog/` | FieldLog marketing site |
+| `fieldlog/` | FieldsLog marketing site |
 | `claimlog/` | ClaimLog marketing site |
-| `insurelog/` | InsureLog marketing site |
+| `insurelog/` | PolicyLog marketing site |
 
 AI API keys are configured in each app (BYOK). Guides open official Gemini / OpenRouter pages from an in-app sheet — this site does not host a key howto.
 
