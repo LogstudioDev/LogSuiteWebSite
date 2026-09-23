@@ -150,10 +150,10 @@ a {
 
 .hero {
   position: relative;
-  min-height: min(92vh, 52rem);
+  min-height: min(78vh, 36rem);
   display: grid;
   align-items: center;
-  padding: 3rem 0 3.5rem;
+  padding: 3.5rem 0 4rem;
   overflow: hidden;
   color: #f4f7fc;
 }
@@ -189,9 +189,7 @@ a {
   position: relative;
   z-index: 2;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.75rem;
+  justify-content: center;
 }
 
 .hero__content {
@@ -259,39 +257,6 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 0.95rem;
-}
-
-.hero__proof {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.85rem;
-}
-
-.hero__device {
-  margin: 0;
-  width: min(17.5rem, 72vw);
-  border-radius: 1.55rem;
-  overflow: hidden;
-  background: #111;
-  border: 1px solid rgba(232, 237, 246, 0.18);
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.5),
-    0 28px 60px rgba(0, 0, 0, 0.55),
-    0 8px 24px rgba(201, 164, 108, 0.08);
-}
-
-.hero__device img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.hero__proof-caption {
-  margin: 0;
-  font-size: 0.8rem;
-  color: rgba(200, 210, 228, 0.65);
-  letter-spacing: 0.02em;
 }
 
 .btn {
@@ -640,16 +605,7 @@ a.app-dir__item:focus-visible {
 @media (max-width: 640px) {
   .hero {
     min-height: auto;
-    padding: 2.5rem 0 2.75rem;
-  }
-
-  .hero__stage {
-    gap: 2.1rem;
-  }
-
-  .hero__device {
-    width: min(15.5rem, 68vw);
-    border-radius: 1.35rem;
+    padding: 2.75rem 0 3rem;
   }
 
   .hero__badge {
