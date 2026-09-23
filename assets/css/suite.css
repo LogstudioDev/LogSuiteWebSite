@@ -119,32 +119,6 @@ a {
   letter-spacing: -0.03em;
 }
 
-.lang {
-  display: inline-flex;
-  gap: 0.15rem;
-  padding: 0.2rem;
-  border: 1px solid var(--line-strong);
-  border-radius: 0.55rem;
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.lang button {
-  border: 0;
-  background: transparent;
-  font: inherit;
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.35rem 0.65rem;
-  cursor: pointer;
-  color: var(--muted);
-  border-radius: 0.4rem;
-  transition: background 160ms ease, color 160ms ease;
-}
-
-.lang button[aria-pressed="true"] {
-  background: rgba(255, 255, 255, 0.12);
-  color: #fff;
-}
 
 /* Hero — photo atmosphere + centered type */
 
@@ -282,10 +256,11 @@ a {
 
 .hero__lede {
   margin: 0 0 1.65rem;
-  color: rgba(220, 228, 242, 0.86);
+  color: #fff;
   font-size: clamp(1.02rem, 2vw, 1.18rem);
   line-height: 1.55;
   max-width: 38rem;
+  text-shadow: 0 1px 18px rgba(0, 0, 0, 0.45);
 }
 
 .hero__actions {
@@ -322,7 +297,7 @@ a {
 .hero__trust {
   margin: 0;
   font-size: 0.82rem;
-  color: rgba(200, 210, 228, 0.72);
+  color: rgba(255, 255, 255, 0.78);
   letter-spacing: 0.01em;
   text-align: center;
 }
@@ -566,12 +541,6 @@ a.app-dir__item:focus-visible {
   max-width: 42rem;
 }
 
-/* i18n */
-
-[data-lang="zh"] [data-i18n-en],
-[data-lang="en"] [data-i18n-zh] {
-  display: none;
-}
 
 /* Motion */
 
