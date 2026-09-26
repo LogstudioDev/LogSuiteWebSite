@@ -26,7 +26,7 @@
     <h1>Privacy Policy</h1>
     <p class="legal-meta">
       Effective date: August 17, 2026<br />
-      Last updated: August 17, 2026<br />
+      Last updated: September 26, 2026<br />
       App: PolicyLog<br />
       Publisher: Logstudio, an independent developer (“we”, “us”, or “our”)
     </p>
@@ -53,7 +53,7 @@
       <li>Claim addresses, claimant details, loss-inspection notes, transcripts, damage zones, damage items, follow-ups, reminders, to-dos, and related metadata are stored using Apple’s on-device storage (SwiftData), with optional sync through your iCloud private database (CloudKit).</li>
       <li>Voice recordings and evidence photos are saved as files on your device and may sync via iCloud Documents when available.</li>
       <li>Speech-to-text uses Apple’s Speech framework; depending on device settings and length of audio, processing may occur on-device or via Apple’s speech services under Apple’s terms.</li>
-      <li>Optional “Organize with AI” sends transcript text to the AI provider you configure, using an API key you supply that remains on your device.</li>
+      <li>Optional “Organize with AI” is off unless you use it. When you do, the app asks for your permission in the app, then may send <strong>transcript text and related note fields you choose to organize</strong> to the third-party AI provider you select (for example <strong>Google Gemini</strong> or <strong>OpenRouter</strong>), using an API key you supply that remains on your device. Raw voice recordings are not sent to those AI providers.</li>
       <li>Local notifications are scheduled on your device for reminders and dated to-dos.</li>
       <li>If you enable sync, selected items may be written to Apple Calendar and/or Apple Reminders; turning sync off removes PolicyLog-created copies from those apps.</li>
       <li>We do not sell your personal information.</li>
@@ -108,7 +108,7 @@
       <li>Scheduling local notifications;</li>
       <li>Optionally creating or updating events/reminders in Apple Calendar / Reminders when you enable those switches;</li>
       <li>Exporting a PDF or a private backup zip that you choose to create and share via the system share sheet;</li>
-      <li>If you use Organize with AI, sending transcript text to your chosen provider so it can return a draft for you to edit.</li>
+      <li>If you use Organize with AI <em>after</em> granting in-app permission, sending transcript text (not raw audio) to your chosen provider (such as Google Gemini or OpenRouter) so it can return a draft for you to review.</li>
     </ul>
     <p>We do not use your site-walk content for advertising.</p>
 
@@ -128,9 +128,30 @@
     <p>Limited sharing or processing may occur only as follows:</p>
     <ul>
       <li><strong>Apple.</strong> Speech recognition, notifications, Calendar, Reminders, iCloud / CloudKit / iCloud Documents, App Store distribution, and device OS services operate under Apple’s terms and privacy practices.</li>
-      <li><strong>AI providers (optional).</strong> If you enable Organize with AI, transcript content is sent to the third-party provider you select (for example OpenAI-compatible endpoints). That processing is governed by that provider’s terms. PolicyLog does not operate the model.</li>
+      <li><strong>AI providers (optional).</strong> If you use Organize with AI, see <a href="#third-party-ai">Optional third-party AI</a> below for what is sent, to whom, and how permission works.</li>
       <li><strong>Service providers.</strong> Website hosting (for example GitHub Pages) may process ordinary server logs for this marketing site.</li>
       <li><strong>Legal requirements.</strong> We may disclose information if required by law, valid legal process, or to protect rights, safety, and security — noting that for the app itself we typically do not hold your site-walk content on our own business servers.</li>
+    </ul>
+
+    
+    <h3 id="third-party-ai">Optional third-party AI (“Organize with AI”)</h3>
+    <p>
+      PolicyLog does <strong>not</strong> require AI. Recording, transcription, manual editing, and local storage work without an API key.
+      Optional “Organize with AI” is a feature you choose to use.
+    </p>
+    <ul>
+      <li><strong>What may be sent.</strong> Transcript text and related note fields needed to produce a draft organize result
+        (such as a summary or structured fields). PolicyLog does <strong>not</strong> send your raw voice recording files to these AI providers for Organize with AI.</li>
+      <li><strong>Who receives it.</strong> The third-party AI provider <strong>you</strong> select in Settings—typically
+        <strong>Google Gemini</strong> or <strong>OpenRouter</strong>, or another OpenAI-compatible endpoint you configure.
+        Your device sends the request directly to that provider. PolicyLog does not run the model and does not route organize requests through a Logstudio-operated AI backend.</li>
+      <li><strong>Permission before sharing.</strong> Before personal data is shared with a third-party AI service, the app discloses what will be sent and identifies the provider,
+        and asks for your permission in the app. If you decline, content stays on your device and Organize with AI does not send it.
+        Permission text in the privacy policy alone is not how consent is obtained—the in-app prompt is required. You may withdraw by declining future prompts, removing your API key, or not using the feature.</li>
+      <li><strong>API keys.</strong> Keys remain on your device (Keychain / local settings) and are not uploaded to Logstudio servers.</li>
+      <li><strong>Provider practices.</strong> Use of Gemini, OpenRouter, or another provider is governed by that provider’s terms and privacy policy.
+        Review those documents. We require that you only use providers whose practices you accept. We do not sell your notes for advertising.</li>
+      <li><strong>Human confirmation.</strong> AI returns a draft; you review and confirm before anything from that draft is saved into your PolicyLog records.</li>
     </ul>
 
     <h2>8. Children’s privacy</h2>
@@ -158,7 +179,7 @@
       <li>Decline microphone or speech permission (recording/transcription features will be limited).</li>
       <li>Disable notifications.</li>
       <li>Keep Calendar / Reminders sync off.</li>
-      <li>Decline to use Organize with AI, or remove your API key.</li>
+      <li>Decline the in-app AI permission prompt, decline to use Organize with AI, or remove your API key so transcript text is not sent to a third-party AI provider.</li>
       <li>Edit or delete claims, claimants, loss inspections, reminders, and follow-ups in the app.</li>
       <li>Uninstall the app to remove local app data (subject to Apple backup and iCloud settings).</li>
     </ul>
