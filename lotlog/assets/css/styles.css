@@ -1,4 +1,4 @@
-/* LotLog marketing site — daylight paper / charcoal type / amber accent */
+/* LotLog marketing site — daylight paper / charcoal type / navy-black accent */
 
 :root {
   --ink: #1a1c1f;
@@ -7,15 +7,15 @@
   --fog: #f7f8fa;
   --fog-dim: #5c6570;
   --paper: #ffffff;
-  --bronze: #f5a623;
-  --bronze-deep: #e09212;
+  --bronze: #1a2f4a;
+  --bronze-deep: #121a26;
   --line: rgba(26, 28, 31, 0.1);
   --shadow: 0 24px 48px rgba(26, 28, 31, 0.1);
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Manrope", "Segoe UI", sans-serif;
   --max: 1120px;
   --radius-device: 28px;
-  --amber-wash: rgba(245, 166, 35, 0.12);
+  --amber-wash: rgba(26, 47, 74, 0.1);
 }
 
 *,
@@ -35,8 +35,8 @@ body {
   line-height: 1.6;
   color: var(--ink);
   background:
-    radial-gradient(ellipse 90% 50% at 100% -10%, rgba(237, 150, 14, 0.09), transparent 55%),
-    radial-gradient(ellipse 70% 40% at 0% 20%, rgba(237, 150, 14, 0.05), transparent 50%),
+    radial-gradient(ellipse 90% 50% at 100% -10%, rgba(26, 47, 74, 0.1), transparent 55%),
+    radial-gradient(ellipse 70% 40% at 0% 20%, rgba(42, 74, 110, 0.06), transparent 50%),
     var(--fog);
   -webkit-font-smoothing: antialiased;
 }
