@@ -1,8 +1,10 @@
 # ChartLog Website
 
-Marketing site for **ChartLog**, nested under LogSuite:
+Marketing site for **ChartLog**:
 
 `LogSuiteWebSite/chartlog/`
+
+Positioning: personal patient chart sidecar (Workbench · patients · Analytics). Voice capture is optional — not the lead story.
 
 ## Local preview
 

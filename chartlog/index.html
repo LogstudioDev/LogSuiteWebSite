@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ChartLog — The clinical note, before the next patient walks in.</title>
-  <meta name="description" content="Speak your SOAP notes in seconds between consultations. Lightning-fast, local-first, and backed by your private iCloud." />
+  <title>ChartLog — A personal chart sidecar for clinic days</title>
+  <meta name="description" content="Workbench for today, one chart per patient, Analytics for follow-ups and birthdays. Local-first visit notes for clinicians — not another EHR." />
   <meta name="theme-color" content="#f3f8f6" />
   <link rel="icon" href="assets/images/logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=6" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=7" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -37,10 +37,11 @@
       </div>
       <div class="hero__veil" aria-hidden="true"></div>
       <div class="hero__content" data-reveal>
-        <p class="brand-mark">For clinic clinicians</p>
-        <h1>The clinical note, before the next patient walks in.</h1>
+        <p class="brand-mark">For independent clinicians</p>
+        <h1>Patients first. Notes that stay with them.</h1>
         <p class="lede">
-          Speak your SOAP notes in seconds between consultations. Lightning-fast, local-first, and backed by your private iCloud.
+          Workbench for today, one chart per patient, Analytics for follow-ups —
+          a personal sidecar beside whatever you already use. Not another EHR login.
         </p>
         <div class="cta-row">
           <a class="btn btn--primary btn--store" id="download" href="#download">
@@ -67,23 +68,22 @@
 
     <section class="section section--how" id="how">
       <div class="section__intro" data-reveal>
-        <h2>The visit stays with the patient. Not in a sticky note.</h2>
-        <p>Say it before the next person walks in. Find them again on your phone — without another clinic login.</p>
+        <h2>Built around the patient — not a sticky note.</h2>
+        <p>See the day, open the chart, keep follow-ups close. Voice capture is there when you need it.</p>
       </div>
       <ol class="steps">
         <li class="step" data-reveal>
           <span class="step__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3z"/>
-              <path d="M19 11a7 7 0 0 1-14 0"/>
-              <path d="M12 18v3"/>
-              <path d="M8 21h8"/>
+              <rect x="3" y="4" width="18" height="16" rx="2"/>
+              <path d="M3 10h18"/>
+              <path d="M8 2v4M16 2v4"/>
             </svg>
           </span>
           <div class="step__body">
             <span class="step__num">01</span>
-            <h3>Say it before the door opens</h3>
-            <p>The visit is still fresh in the hallway. Speak it. It stays on your phone, even if the next patient is already waiting.</p>
+            <h3>Start on the Workbench</h3>
+            <p>Today’s visits and dated to-dos in one place — who to see next, what still needs doing.</p>
           </div>
         </li>
         <li class="step" data-reveal data-reveal-delay="80">
@@ -95,8 +95,8 @@
           </span>
           <div class="step__body">
             <span class="step__num">02</span>
-            <h3>It stays on that patient</h3>
-            <p>Next time you see them, the note and the return date are already there — not a blank sticky, and not another EHR login.</p>
+            <h3>Open that patient’s chart</h3>
+            <p>Info, visits, schedule, to-dos, and files hang on the person — not a hallway pile of memos.</p>
           </div>
         </li>
         <li class="step" data-reveal data-reveal-delay="160">
@@ -108,8 +108,8 @@
           </span>
           <div class="step__body">
             <span class="step__num">03</span>
-            <h3>Yours, on this phone</h3>
-            <p>No account. Nothing is uploaded to ChartLog. A personal visit book, not the clinic’s chart system.</p>
+            <h3>Yours, on this device</h3>
+            <p>No ChartLog account. Nothing is uploaded to ChartLog. A personal sidecar — not the clinic’s chart system.</p>
           </div>
         </li>
       </ol>
@@ -117,15 +117,26 @@
 
     <section class="section section--features" id="features">
       <div class="section__intro" data-reveal>
-        <h2>Next time, you already know this patient.</h2>
-        <p>The note and the return date are on your phone. The clinic chart system can wait.</p>
+        <h2>Everything you need between patients.</h2>
+        <p>Light CRM for clinic days. Capture is optional; the patient hub is the point.</p>
       </div>
       <div class="feature-grid">
         <article class="feature" data-reveal>
-          <h3>Inbox, then the right patient</h3>
+          <h3>Workbench for today</h3>
           <p>
-            Speak first. Hang the note on a patient when you know who it was —
-            no chart picker blocking the mic.
+            Today’s schedule and dated to-dos up front — who to see next, what still needs a call or refill.
+          </p>
+        </article>
+        <article class="feature" data-reveal data-reveal-delay="60">
+          <h3>One chart per patient</h3>
+          <p>
+            Info, visits, schedule, to-dos, and files in one place. Open the person, not a generic notepad.
+          </p>
+        </article>
+        <article class="feature" data-reveal data-reveal-delay="120">
+          <h3>Analytics that matter</h3>
+          <p>
+            Weekly pulse, who needs follow-up, upcoming birthdays — reminders for your list, not a clinic dashboard.
           </p>
         </article>
         <article class="feature" data-reveal data-reveal-delay="60">
@@ -136,40 +147,28 @@
           </p>
         </article>
         <article class="feature" data-reveal data-reveal-delay="120">
-          <h3>Return dates that stick</h3>
+          <h3>Capture when you need it</h3>
           <p>
-            Pin follow-ups on the patient. Optional Apple Calendar and Reminders —
-            without living inside the clinic’s scheduling product.
-          </p>
-        </article>
-        <article class="feature" data-reveal data-reveal-delay="60">
-          <h3>Find it fast</h3>
-          <p>
-            Search patients, notes, SOAP fields, and dates from Today. Jump straight back in.
-          </p>
-        </article>
-        <article class="feature" data-reveal data-reveal-delay="120">
-          <h3>Share a clean PDF</h3>
-          <p>
-            Print or send the sections you choose — not a raw voice dump by accident.
-            Private zip when you want your own archive.
+            Record a visit memo from the patient’s Visits tab when speaking is faster.
+            On-device transcription; the note hangs on that person.
           </p>
         </article>
         <article class="feature" data-reveal data-reveal-delay="180">
-          <h3>One-tap from the Home Screen</h3>
+          <h3>Find &amp; share cleanly</h3>
           <p>
-            Due Today for returns and tasks. Record to start a memo instantly — Lock Screen too.
+            Search patients, notes, SOAP, and files. Export a printable PDF with the sections you choose —
+            or a private zip for your own archive.
           </p>
         </article>
         <article class="feature" data-reveal data-reveal-delay="60">
           <h3>AI only if you want it</h3>
           <p>
-            Use your own key (Gemini or OpenRouter). AI drafts SOAP and follow-ups; you edit and confirm.
-            Keys stay on your phone.
+            Bring your own key (OpenRouter, Gemini, Claude, OpenAI, or DeepSeek).
+            Drafts stay drafts until you confirm. Keys stay on your phone.
           </p>
         </article>
         <article class="feature" data-reveal data-reveal-delay="120">
-          <h3>iPhone &amp; iPad</h3>
+          <h3>iPhone, iPad &amp; Mac</h3>
           <p>
             Same patient book on the devices you carry. Sync only if you turn it on.
           </p>
@@ -192,7 +191,7 @@
     <section class="section section--screens" id="screens">
       <div class="section__intro" data-reveal>
         <h2>Built around your patients.</h2>
-        <p>The visit you just spoke is already on that person — still on your phone.</p>
+        <p>Workbench, charts, and follow-ups — still on your phone.</p>
       </div>
 
       <div class="screen-carousel" data-reveal data-carousel>
@@ -203,28 +202,28 @@
         <div class="screen-carousel__viewport">
                     <ul class="screen-carousel__track">
             <li class="screen-carousel__slide is-active">
-              <img src="assets/images/1.png" alt="ChartLog screenshot 1" width="800" height="1633" />
+              <img src="assets/images/1.png" alt="ChartLog Workbench" width="800" height="1633" />
             </li>
             <li class="screen-carousel__slide">
-              <img src="assets/images/2.png" alt="ChartLog screenshot 2" width="800" height="1633" />
+              <img src="assets/images/2.png" alt="ChartLog patient chart" width="800" height="1633" />
             </li>
             <li class="screen-carousel__slide">
-              <img src="assets/images/3.png" alt="ChartLog screenshot 3" width="800" height="1633" />
+              <img src="assets/images/3.png" alt="ChartLog patient schedule" width="800" height="1633" />
             </li>
             <li class="screen-carousel__slide">
-              <img src="assets/images/4.png" alt="ChartLog screenshot 4" width="800" height="1633" />
+              <img src="assets/images/4.png" alt="ChartLog visit capture" width="800" height="1633" />
             </li>
             <li class="screen-carousel__slide">
-              <img src="assets/images/5.png" alt="ChartLog screenshot 5" width="800" height="1633" />
+              <img src="assets/images/5.png" alt="ChartLog Analytics" width="800" height="1633" />
             </li>
             <li class="screen-carousel__slide">
-              <img src="assets/images/6.png" alt="ChartLog screenshot 6" width="800" height="1633" />
+              <img src="assets/images/6.png" alt="ChartLog screenshot" width="800" height="1633" />
             </li>
             <li class="screen-carousel__slide">
-              <img src="assets/images/7.png" alt="ChartLog screenshot 7" width="800" height="1633" />
+              <img src="assets/images/7.png" alt="ChartLog screenshot" width="800" height="1633" />
             </li>
             <li class="screen-carousel__slide">
-              <img src="assets/images/8.png" alt="ChartLog screenshot 8" width="800" height="1633" />
+              <img src="assets/images/8.png" alt="ChartLog privacy settings" width="800" height="1633" />
             </li>
           </ul>
         </div>
@@ -247,7 +246,7 @@
     </section>
 
     <section class="section section--cta" data-reveal>
-      <h2>Ready between patients.</h2>
+      <h2>Ready for clinic days.</h2>
       <p>ChartLog for iPhone and iPad.</p>
       <div class="cta-row" style="justify-content: center;">
         <a class="btn btn--primary btn--store" href="#download">
