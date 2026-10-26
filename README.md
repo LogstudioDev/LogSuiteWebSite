@@ -13,15 +13,12 @@ Open:
 
 - `http://localhost:8080/` — suite landing
 - `http://localhost:8080/matterlog/` — MatterLog
-- `http://localhost:8080/chartlog/` — ChartLog（路径已对齐商店名 ChartLog）
+- `http://localhost:8080/chartlog/` — ChartLog
 - `http://localhost:8080/realtylogs/` — RealtyLogs
 - `http://localhost:8080/lotlog/` — LotLog
 - `http://localhost:8080/inspectlog/` — InspectLog
 - `http://localhost:8080/fieldslog/` — FieldsLog
 - `http://localhost:8080/claimlog/` — ClaimLog
-- `http://localhost:8080/policylog/` — PolicyLog
-
-旧路径 `autolog/` · `fieldlog/` · `insurelog/` · `realtylog/` 保留 redirect 到新店名路径。
 
 ## Layout
 
@@ -35,9 +32,10 @@ Open:
 | `inspectlog/` | InspectLog marketing site |
 | `fieldslog/` | FieldsLog marketing site |
 | `claimlog/` | ClaimLog marketing site |
-| `policylog/` | PolicyLog marketing site |
 
-AI API keys are configured in each app (BYOK). Guides open official Gemini / OpenRouter pages from an in-app sheet — this site does not host a key howto.
+Store display names match folder names. Old redirect stubs (`autolog`, `fieldlog`, `realtylog`, `insurelog`) and retired **PolicyLog** were removed.
+
+AI API keys are configured in each app (BYOK). Guides open official provider pages from an in-app sheet — this site does not host a key howto.
 
 ## GitHub Pages
 
