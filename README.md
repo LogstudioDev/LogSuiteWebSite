@@ -13,7 +13,7 @@ Open:
 
 - `http://localhost:8080/` — suite landing
 - `http://localhost:8080/matterlog/` — MatterLog
-- `http://localhost:8080/scribelog/` — ChartLog（路径暂不改；以后再迁 `/chartlog/`）
+- `http://localhost:8080/chartlog/` — ChartLog（路径已对齐商店名 ChartLog）
 - `http://localhost:8080/realtylogs/` — RealtyLogs
 - `http://localhost:8080/lotlog/` — LotLog
 - `http://localhost:8080/inspectlog/` — InspectLog
@@ -29,7 +29,7 @@ Open:
 | --- | --- |
 | `index.html` | LogSuite series LP |
 | `matterlog/` | MatterLog marketing site |
-| `scribelog/` | ChartLog marketing site（暂用工程路径） |
+| `chartlog/` | ChartLog marketing site |
 | `realtylogs/` | RealtyLogs marketing site |
 | `lotlog/` | LotLog marketing site |
 | `inspectlog/` | InspectLog marketing site |

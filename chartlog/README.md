@@ -2,7 +2,7 @@
 
 Marketing site for **ChartLog**, nested under LogSuite:
 
-`LogSuiteWebSite/scribelog/`
+`LogSuiteWebSite/chartlog/`
 
 ## Local preview
 
@@ -11,7 +11,7 @@ cd LogSuiteWebSite
 python3 -m http.server 8080
 ```
 
-Open `http://localhost:8080/scribelog/`.
+Open `http://localhost:8080/chartlog/`.
 
 ## Pages
 
