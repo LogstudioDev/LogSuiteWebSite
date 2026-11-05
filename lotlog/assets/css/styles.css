@@ -1,4 +1,4 @@
-/* LotLog marketing site — daylight paper / charcoal type / navy-black accent */
+/* LotLog marketing site — daylight paper / charcoal type / navy accent · logo v3 */
 
 :root {
   --ink: #1a1c1f;
@@ -103,10 +103,12 @@ a:hover {
 .legal-brand img {
   width: 36px;
   height: 36px;
-  object-fit: contain;
-  background: var(--paper);
-  border: 1px solid color-mix(in srgb, var(--bronze) 45%, transparent);
-  border-radius: 10px;
+  object-fit: cover;
+  background: #1a2f4a;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--bronze) 28%, transparent),
+    0 6px 14px rgba(26, 47, 74, 0.18);
 }
 
 .brand__name {
