@@ -1,4 +1,4 @@
-/* LotLog marketing site — daylight paper / charcoal type / app-blue accent · logo v4 */
+/* LotLog marketing site — daylight paper / charcoal type / app blue #2D7DFA */
 
 :root {
   --ink: #1a1c1f;
@@ -7,8 +7,8 @@
   --fog: #f7f8fa;
   --fog-dim: #5c6570;
   --paper: #ffffff;
-  --bronze: #2d7dfa;
-  --bronze-deep: #1a5fd4;
+  --bronze: #2D7DFA;
+  --bronze-deep: #1B5FD4;
   --line: rgba(26, 28, 31, 0.1);
   --shadow: 0 24px 48px rgba(26, 28, 31, 0.1);
   --font-display: "Fraunces", Georgia, serif;
@@ -104,7 +104,7 @@ a:hover {
   width: 36px;
   height: 36px;
   object-fit: cover;
-  background: #2d7dfa;
+  background: #2D7DFA;
   border: none;
   border-radius: 9px;
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--bronze) 28%, transparent),
@@ -262,13 +262,13 @@ a:hover {
 }
 
 .btn--primary {
-  background: var(--bronze);
-  color: #1a1410;
+  background: #2D7DFA;
+  color: #ffffff;
 }
 
 .btn--primary:hover {
-  background: #f0a62a;
-  color: #1a1410;
+  background: #2D7DFA;
+  color: #ffffff;
 }
 
 .btn--ghost {
@@ -382,7 +382,7 @@ a:hover {
   border-radius: 12px;
   color: var(--bronze-deep);
   background: var(--amber-wash);
-  border: 1px solid rgba(237, 150, 14, 0.28);
+  border: 1px solid rgba(45, 125, 250, 0.28);
 }
 
 .step__icon svg {
@@ -428,8 +428,8 @@ a:hover {
   padding: clamp(2.5rem, 6vw, 3.75rem);
   border-radius: 28px;
   background:
-    radial-gradient(ellipse 80% 120% at 0% 0%, rgba(237, 150, 14, 0.16), transparent 55%),
-    linear-gradient(135deg, #fffdf8, #f3f5f8);
+    radial-gradient(ellipse 80% 120% at 0% 0%, rgba(45, 125, 250, 0.16), transparent 55%),
+    linear-gradient(135deg, #f7faff, #eef3f9);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
 }
@@ -452,7 +452,7 @@ a:hover {
 }
 
 .text-link:hover {
-  color: #a86608;
+  color: #1B5FD4;
 }
 
 /* Screenshot carousel — no chrome around phones */
@@ -525,7 +525,7 @@ a:hover {
 
 .screen-carousel__nav:hover {
   border-color: color-mix(in srgb, var(--bronze) 55%, transparent);
-  background: #fff8ec;
+  background: #eef5ff;
 }
 
 .screen-carousel__nav:active {
@@ -652,7 +652,7 @@ a:hover {
 
 .legal-page {
   background:
-    radial-gradient(ellipse 60% 40% at 10% 0%, rgba(237, 150, 14, 0.1), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 10% 0%, rgba(45, 125, 250, 0.1), transparent 55%),
     var(--fog);
   min-height: 100vh;
 }
@@ -775,7 +775,7 @@ a:hover {
   border-radius: 24px;
   border: 1px solid var(--line);
   background:
-    radial-gradient(ellipse 70% 80% at 0% 0%, rgba(237, 150, 14, 0.12), transparent 55%),
+    radial-gradient(ellipse 70% 80% at 0% 0%, rgba(45, 125, 250, 0.12), transparent 55%),
     var(--paper);
   box-shadow: var(--shadow);
 }
