@@ -1,4 +1,4 @@
-/* LotLog marketing site — daylight paper / charcoal type / navy accent · logo v3 */
+/* LotLog marketing site — daylight paper / charcoal type / app-blue accent · logo v4 */
 
 :root {
   --ink: #1a1c1f;
@@ -7,15 +7,15 @@
   --fog: #f7f8fa;
   --fog-dim: #5c6570;
   --paper: #ffffff;
-  --bronze: #1a2f4a;
-  --bronze-deep: #121a26;
+  --bronze: #2d7dfa;
+  --bronze-deep: #1a5fd4;
   --line: rgba(26, 28, 31, 0.1);
   --shadow: 0 24px 48px rgba(26, 28, 31, 0.1);
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Manrope", "Segoe UI", sans-serif;
   --max: 1120px;
   --radius-device: 28px;
-  --amber-wash: rgba(26, 47, 74, 0.1);
+  --amber-wash: rgba(45, 125, 250, 0.12);
 }
 
 *,
@@ -35,8 +35,8 @@ body {
   line-height: 1.6;
   color: var(--ink);
   background:
-    radial-gradient(ellipse 90% 50% at 100% -10%, rgba(26, 47, 74, 0.1), transparent 55%),
-    radial-gradient(ellipse 70% 40% at 0% 20%, rgba(42, 74, 110, 0.06), transparent 50%),
+    radial-gradient(ellipse 90% 50% at 100% -10%, rgba(45, 125, 250, 0.12), transparent 55%),
+    radial-gradient(ellipse 70% 40% at 0% 20%, rgba(45, 125, 250, 0.06), transparent 50%),
     var(--fog);
   -webkit-font-smoothing: antialiased;
 }
@@ -104,11 +104,11 @@ a:hover {
   width: 36px;
   height: 36px;
   object-fit: cover;
-  background: #1a2f4a;
+  background: #2d7dfa;
   border: none;
   border-radius: 9px;
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--bronze) 28%, transparent),
-    0 6px 14px rgba(26, 47, 74, 0.18);
+    0 6px 14px rgba(45, 125, 250, 0.22);
 }
 
 .brand__name {
