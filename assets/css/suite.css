@@ -120,120 +120,88 @@ a {
 }
 
 
-/* Hero — photo atmosphere + centered type */
+/* Hero — centered composition: left copy + cropped portrait panels */
 
 .hero {
-  position: relative;
-  min-height: min(78vh, 36rem);
-  display: grid;
-  align-items: center;
-  padding: 3.5rem 0 4rem;
-  overflow: hidden;
-  color: #f4f7fc;
-}
-
-.hero__atmosphere {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background: #090a0f;
-}
-
-.hero__banner {
-  position: absolute;
-  inset: 0;
-}
-
-.hero__banner img {
+  --hero-navy: #101B2F;
+  --hero-shell-max: 1280px;
+  --hero-text-col: 39%;
+  --hero-art-col: 61%;
+  /* Portrait crop of v5 art: right ~68% (drop left navy blank); aspect 1.90 */
+  --hero-art-aspect: 1.90;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 45%;
-  transform: scale(1.12);
-  filter: brightness(1.45) contrast(1.28) saturate(1.45);
+  margin: 0;
+  padding: clamp(1.25rem, 2.2vw, 2rem) 0 0;
+  overflow: visible;
+  color: #f4f7fc;
+  background: var(--hero-navy);
+  /* Kill any leftover full-bleed / tall hero behavior */
+  min-height: 0;
+  aspect-ratio: auto;
+  display: block;
 }
 
-.hero__grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(232, 237, 246, 0.028) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(232, 237, 246, 0.028) 1px, transparent 1px);
-  background-size: 56px 56px;
-  mask-image: radial-gradient(ellipse 80% 75% at 50% 45%, #000 15%, transparent 75%);
-  -webkit-mask-image: radial-gradient(ellipse 80% 75% at 50% 45%, #000 15%, transparent 75%);
-  opacity: 0.22;
-  pointer-events: none;
-}
-
-.hero__veil {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(
-      ellipse 52% 46% at 50% 40%,
-      rgba(9, 10, 15, 0.1) 0%,
-      rgba(9, 10, 15, 0.28) 58%,
-      rgba(9, 10, 15, 0.55) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(9, 10, 15, 0.32) 0%,
-      rgba(9, 10, 15, 0.06) 48%,
-      rgba(9, 10, 15, 0.5) 100%
-    );
-}
-
-.hero__stage {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
+.hero__shell {
+  /* 100vw (not 100%) so height calc doesn't resolve % against height */
+  --hero-shell-w: min(calc(100vw - 2.5rem), var(--hero-shell-max));
+  width: var(--hero-shell-w);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: var(--hero-text-col) var(--hero-art-col);
+  align-items: stretch;
+  /* Height from art column so right-aligned crop keeps faces/labels */
+  height: calc(var(--hero-shell-w) * 0.61 / var(--hero-art-aspect));
+  max-height: 420px;
+  min-height: 0;
+  border-radius: 0;
+  background: var(--hero-navy);
 }
 
 .hero__content {
-  max-width: 44rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.75rem) clamp(1rem, 2.2vw, 1.85rem) 0 clamp(0.85rem, 1.6vw, 1.25rem);
+  background: var(--hero-navy);
+  z-index: 1;
 }
 
-.hero__badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  margin: 0 0 1.25rem;
-  padding: 0.4rem 0.9rem;
-  border-radius: 999px;
-  border: 1px solid rgba(232, 237, 246, 0.16);
-  background: rgba(9, 10, 15, 0.55);
-  backdrop-filter: blur(8px);
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: rgba(210, 220, 236, 0.88);
+.hero__media {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--hero-navy);
 }
 
-.hero__badge-dot {
-  width: 0.4rem;
-  height: 0.4rem;
-  border-radius: 50%;
-  background: var(--accent-bright);
-  box-shadow: 0 0 10px rgba(226, 196, 138, 0.7);
-  flex-shrink: 0;
+/* Height-fill + right-align clips left navy blank; keeps diagonal abutting copy */
+.hero__banner-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: unset;
+  transform: none;
+  filter: none;
 }
+
+
 
 .hero h1 {
-  margin: 0 0 1.1rem;
+  margin: 0 0 0.65rem;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(2.45rem, 6.4vw, 4.25rem);
-  line-height: 1.08;
-  letter-spacing: -0.04em;
+  font-size: clamp(1.8rem, 1.55rem + 1.15vw, 2.5rem);
+  line-height: 1.14;
+  letter-spacing: -0.035em;
   color: #fff;
   text-wrap: balance;
+  max-width: 100%;
 }
 
 .hero__accent {
@@ -245,19 +213,19 @@ a {
 }
 
 .hero__lede {
-  margin: 0 0 1.65rem;
-  color: #fff;
-  font-size: clamp(1.02rem, 2vw, 1.18rem);
-  line-height: 1.55;
-  max-width: 38rem;
-  text-shadow: 0 1px 18px rgba(0, 0, 0, 0.45);
+  margin: 0 0 1rem;
+  color: rgba(236, 242, 250, 0.92);
+  font-size: clamp(0.86rem, 0.8rem + 0.25vw, 0.98rem);
+  line-height: 1.45;
+  max-width: 28rem;
+  text-shadow: none;
 }
 
 .hero__actions {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.95rem;
+  align-items: flex-start;
+  gap: 0.65rem;
 }
 
 .btn {
@@ -266,10 +234,10 @@ a {
   justify-content: center;
   text-decoration: none;
   font-weight: 650;
-  font-size: 0.98rem;
+  font-size: 0.92rem;
   letter-spacing: -0.01em;
   border-radius: 0.65rem;
-  padding: 0.9rem 1.45rem;
+  padding: 0.78rem 1.25rem;
   transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
 }
 
@@ -286,10 +254,77 @@ a {
 
 .hero__trust {
   margin: 0;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: rgba(255, 255, 255, 0.78);
   letter-spacing: 0.01em;
-  text-align: center;
+  text-align: left;
+  line-height: 1.4;
+  max-width: 22rem;
+}
+
+/* Narrow desktop / tablet: still centered row, slightly tighter type */
+@media (max-width: 1100px) and (min-width: 901px) {
+  .hero {
+    --hero-shell-max: 1080px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.65rem, 1.4rem + 0.95vw, 2.15rem);
+  }
+
+  .hero__lede {
+    font-size: 0.88rem;
+  }
+}
+
+/* Stack when text column would be too cramped */
+@media (max-width: 900px) {
+  .hero {
+    padding: 1.35rem 0 0;
+  }
+
+  .hero__shell {
+    width: min(calc(100vw - 2rem), var(--hero-shell-max));
+    height: auto;
+    max-height: none;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .hero__content {
+    padding: 0.35rem 0.15rem 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.65rem, 6.5vw, 2.05rem);
+  }
+
+  .hero__lede {
+    font-size: 0.94rem;
+    max-width: 36rem;
+  }
+
+  .hero__media {
+    /* Portrait strip only; fixed safe aspect matching cropped art */
+    width: 100%;
+    aspect-ratio: var(--hero-art-aspect);
+    height: auto;
+    border-radius: 0;
+  }
+
+  .hero__banner-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__media {
+    aspect-ratio: 1.72;
+  }
 }
 
 /* Apps — showcase cards with one-line value */
@@ -375,15 +410,22 @@ a {
     box-shadow 220ms ease;
 }
 
-a.app-dir__item:hover {
+a.app-dir__item:hover,
+a.app-dir__item:active {
   transform: translateY(-4px);
-  border-color: rgba(232, 237, 246, 0.22);
+  border-color: color-mix(in srgb, var(--tile) 45%, rgba(232, 237, 246, 0.22));
   background: #121a2c;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
 }
 
-a.app-dir__item:hover .app-dir__name {
+a.app-dir__item:hover .app-dir__name,
+a.app-dir__item:active .app-dir__name {
   color: var(--tile);
+}
+
+a.app-dir__item:hover .app-dir__field,
+a.app-dir__item:active .app-dir__field {
+  color: color-mix(in srgb, var(--tile) 70%, #ffffff);
 }
 
 a.app-dir__item:focus-visible {
@@ -535,11 +577,6 @@ a.app-dir__item:focus-visible {
 /* Motion */
 
 /* Above-the-fold never waits on reveal */
-.hero__stage {
-  opacity: 1;
-  transform: none;
-}
-
 [data-reveal] {
   opacity: 0;
   transform: translateY(16px);
@@ -592,21 +629,13 @@ a.app-dir__item:focus-visible {
   }
 
   a.app-dir__item:hover,
+  a.app-dir__item:active,
   .btn--primary:hover {
     transform: none;
   }
 }
 
 @media (max-width: 640px) {
-  .hero {
-    min-height: auto;
-    padding: 2.75rem 0 3rem;
-  }
-
-  .hero__badge {
-    max-width: 100%;
-  }
-
   .apps-section {
     padding: 3.25rem 0 3.5rem;
   }

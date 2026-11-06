@@ -4,13 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>LogSuite — Out of your head. Into your devices.</title>
-  <meta name="description" content="Eight specialized LogSuite apps for law, medicine, real estate, and more. Lightning-fast voice capture — local-first, synced via your private iCloud." />
+  <meta name="description" content="Four local-first LogSuite notebooks for law, clinic, car lots, and jobsites. Free — notes stay on your device; optional AI uses your own key." />
   <meta name="theme-color" content="#090a0f" />
   <link rel="icon" href="assets/images/logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/suite.css?v=13" />
+  <link rel="stylesheet" href="assets/css/suite.css?v=17" />
 </head>
 <body>
   <a class="skip-link" href="#apps">Skip to apps</a>
@@ -27,34 +27,32 @@
 
     <main>
       <section class="hero" aria-label="LogSuite">
-        <div class="hero__atmosphere" aria-hidden="true">
-          <div class="hero__banner">
-            <img src="assets/images/banner.jpg" alt="" width="1280" height="720" />
-          </div>
-          <div class="hero__grid"></div>
-          <div class="hero__veil"></div>
-        </div>
-        <div class="wrap hero__stage">
+        <div class="hero__shell">
           <div class="hero__content">
-            <p class="hero__badge">
-              <span class="hero__badge-dot" aria-hidden="true"></span>
-              Local-first voice suite · Private iCloud
-            </p>
             <h1>
-              Out of your head.<br />
-              <span class="hero__accent">Into your devices.</span>
+              Simple, practical notebooks.<br />
+              <span class="hero__accent">Completely free.</span>
             </h1>
             <p class="hero__lede">
-              Eight specialized apps for law, medicine, real estate, and more. Lightning-fast voice capture — stored locally, synced via your private iCloud.
+              For attorneys, clinicians, independent car dealers, and site leads. Speak your notes when your hands are busy, and keep your work organized.
             </p>
             <div class="hero__actions">
               <a class="btn btn--primary" href="#apps">
-                Explore all 8 apps
+                Explore the 4 apps
               </a>
               <p class="hero__trust">
-                Works on iPhone &amp; iPad. No LogSuite account.
+                Available on iPhone, iPad, and Mac. No LogSuite account.
               </p>
             </div>
+          </div>
+          <div class="hero__media" aria-hidden="true">
+            <img
+              class="hero__banner-img"
+              src="assets/images/banner.jpg?v=20261106v5"
+              alt=""
+              width="2800"
+              height="1000"
+            />
           </div>
         </div>
       </section>
@@ -63,13 +61,13 @@
         <div class="wrap">
           <header class="apps-section__head" data-reveal>
             <p class="apps-section__eyebrow">
-              Eight specialized apps
+              Four specialized apps
             </p>
             <h2>
               One craft per app. Same simple rhythm.
             </h2>
             <p>
-              Pick yours — speak in the gap, file it where it belongs.
+              Pick yours — jot or speak in the gap, keep the day in one place.
             </p>
           </header>
 
@@ -83,13 +81,13 @@
                     Law / Litigation
                   </span>
                   <span class="app-dir__blurb">
-                    Dictate case notes and voice memos the moment you leave court. Notes stay on your device and private iCloud by default; optional AI uses your own key after you agree.
+                    For solo and small-firm attorneys. Jot case notes, speak when hands are full, keep hearings and to-dos on Today.
                   </span>
                 </div>
               </a>
             </li>
             <li data-reveal data-reveal-delay="40">
-              <a class="app-dir__item" href="chartlog/" style="--tile: #3d9a6a;">
+              <a class="app-dir__item" href="chartlog/" style="--tile: #16a34a;">
                 <img class="app-dir__logo" src="chartlog/assets/images/logo.png" alt="" width="64" height="64" />
                 <div class="app-dir__copy">
                   <span class="app-dir__name">ChartLog</span>
@@ -97,13 +95,13 @@
                     Clinic / Medical
                   </span>
                   <span class="app-dir__blurb">
-                    Workbench for today, one chart per patient, Analytics for follow-ups — a personal sidecar beside your clinic workflow.
+                    For clinicians. One chart per patient — visits, schedule, and follow-ups in a personal notebook beside clinic work.
                   </span>
                 </div>
               </a>
             </li>
             <li data-reveal data-reveal-delay="80">
-              <a class="app-dir__item" href="lotlog/" style="--tile: #1a2f4a;">
+              <a class="app-dir__item" href="lotlog/" style="--tile: #2D7DFA;">
                 <img class="app-dir__logo" src="lotlog/assets/images/logo.png" alt="" width="64" height="64" />
                 <div class="app-dir__copy">
                   <span class="app-dir__name">LotLog</span>
@@ -111,13 +109,13 @@
                     Used cars / Auction
                   </span>
                   <span class="app-dir__blurb">
-                    The pocket notebook for your lots. For indie dealers — vehicles, recon, max bid. Makes running your lot simpler.
+                    For indie dealers — vehicles, recon, max bid. Makes running your lot simpler.
                   </span>
                 </div>
               </a>
             </li>
             <li data-reveal data-reveal-delay="120">
-              <a class="app-dir__item" href="fieldslog/" style="--tile: #6b8ab5;">
+              <a class="app-dir__item" href="fieldslog/" style="--tile: #E8710A;">
                 <img class="app-dir__logo" src="fieldslog/assets/images/logo.png" alt="" width="64" height="64" />
                 <div class="app-dir__copy">
                   <span class="app-dir__name">FieldsLog</span>
@@ -125,7 +123,7 @@
                     Jobsite / GC
                   </span>
                   <span class="app-dir__blurb">
-                    The rugged voice sidecar for general contractors. Drop field notes and punch items locally before the next site rolls in.
+                    For site leads — walks, owner extras, punch. Keep every job easier to run.
                   </span>
                 </div>
               </a>
@@ -144,11 +142,11 @@
           <ul class="principles__list">
             <li class="principle-card">
               <strong>Private by default</strong>
-              Notes stay on your phone and private iCloud by default. No LogSuite account. Optional AI uses your key — only after you agree.
+              Notes stay on your phone and private iCloud by default. No LogSuite account. Optional AI uses your own key — only after you agree.
             </li>
             <li class="principle-card">
-              <strong>Fast when you’re busy</strong>
-              Open, speak, done. Built for the gap between one client and the next.
+              <strong>Free and ready</strong>
+              Free apps, no in-app purchases. Open, jot or speak, done — built for the gap between one stop and the next.
             </li>
             <li class="principle-card">
               <strong>Speaks your language</strong>
