@@ -2,7 +2,7 @@
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
 
-  // Broken/missing image → show filename as a clear placeholder label (teal wash)
+  // Broken/missing image → show filename as a clear placeholder label (orange wash)
   document.querySelectorAll("img").forEach((img) => {
     img.addEventListener("error", () => {
       if (img.dataset.placeholderApplied) return;
@@ -16,11 +16,11 @@
       const ctx = canvas.getContext("2d");
       if (!ctx) return;
       const g = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-      g.addColorStop(0, "#eef8f6");
+      g.addColorStop(0, "#FFF5EB");
       g.addColorStop(1, "#f0f2f5");
       ctx.fillStyle = g;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.strokeStyle = "rgba(15,118,110,0.55)";
+      ctx.strokeStyle = "rgba(232,113,10,0.55)";
       ctx.lineWidth = 4;
       ctx.setLineDash([14, 10]);
       ctx.strokeRect(24, 24, canvas.width - 48, canvas.height - 48);

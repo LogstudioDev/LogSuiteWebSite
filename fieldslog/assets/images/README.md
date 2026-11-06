@@ -2,11 +2,23 @@
 
 | File | Use |
 | --- | --- |
-| `logo.png` | Site / favicon logo (from AppIcon) |
+| `logo.png` | Site / favicon logo (from AppIcon; brand orange `#E8710A`) |
 | `banner.jpg` | Homepage hero full-bleed background |
-| `1.png` … `6.png` | “Built around your job sites” carousel slides (optional) |
+| `1.png` … `7.png` | “Built around your jobsites” carousel slides |
 
-When `1.png`–`6.png` are missing, the landing page shows an empty-state note instead of broken image links.
+## Screenshot mapping (current set)
+
+| File | Screen | Carousel alt focus |
+| --- | --- | --- |
+| `1.png` | Today — due follow-ups + unsent owner changes | Today |
+| `2.png` | Site · Walks (Cedar deck add-on) | Walks |
+| `3.png` | Site · Changes (estimate $ / status) | Changes |
+| `4.png` | Scratch note + Organize with AI | Voice / AI |
+| `5.png` | Board overview | Board |
+| `6.png` | Contact detail (owner / contractor) | Contacts |
+| `7.png` | Settings (privacy / AI) | Settings |
+
+When `1.png`–`7.png` are missing, the landing page shows an empty-state note instead of broken image links.
 
 ## Banner (shipped)
 
