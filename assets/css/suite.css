@@ -76,8 +76,13 @@ a {
 .topbar {
   position: sticky;
   top: 0;
-  z-index: 20;
-  backdrop-filter: blur(16px) saturate(1.15);
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0.9rem clamp(1.25rem, 4vw, 2.5rem);
+  backdrop-filter: blur(14px) saturate(1.15);
   background: rgba(9, 10, 15, 0.72);
   border-bottom: 1px solid transparent;
   transition: border-color 200ms ease, background 200ms ease;
@@ -86,14 +91,6 @@ a {
 .topbar.is-scrolled {
   border-bottom-color: var(--line);
   background: rgba(9, 10, 15, 0.92);
-}
-
-.topbar__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.95rem 0;
 }
 
 .brand {
@@ -120,88 +117,81 @@ a {
 }
 
 
-/* Hero — centered composition: left copy + cropped portrait panels */
+/* Hero — same conceptual layers as Matter/Chart/Lot/Fields */
 
 .hero {
-  --hero-navy: #101B2F;
-  --hero-shell-max: 1280px;
-  --hero-text-col: 39%;
-  --hero-art-col: 61%;
-  /* Portrait crop of v5 art: right ~68% (drop left navy blank); aspect 1.90 */
-  --hero-art-aspect: 1.90;
-  width: 100%;
-  margin: 0;
-  padding: clamp(1.25rem, 2.2vw, 2rem) 0 0;
-  overflow: visible;
+  --hero-navy: #1e2b3d;
+  position: relative;
+  min-height: min(72vh, 640px);
+  display: flex;
+  align-items: center;
+  padding:
+    clamp(2rem, 5vh, 3rem)
+    clamp(1.25rem, 4vw, 2.5rem)
+    clamp(2.5rem, 6vh, 3.5rem);
+  overflow: hidden;
   color: #f4f7fc;
   background: var(--hero-navy);
-  /* Kill any leftover full-bleed / tall hero behavior */
-  min-height: 0;
-  aspect-ratio: auto;
-  display: block;
 }
 
-.hero__shell {
-  /* 100vw (not 100%) so height calc doesn't resolve % against height */
-  --hero-shell-w: min(calc(100vw - 2.5rem), var(--hero-shell-max));
-  width: var(--hero-shell-w);
-  margin-inline: auto;
-  display: grid;
-  grid-template-columns: var(--hero-text-col) var(--hero-art-col);
-  align-items: stretch;
-  /* Height from art column so right-aligned crop keeps faces/labels */
-  height: calc(var(--hero-shell-w) * 0.61 / var(--hero-art-aspect));
-  max-height: 420px;
-  min-height: 0;
-  border-radius: 0;
-  background: var(--hero-navy);
-}
-
-.hero__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: left;
-  min-width: 0;
-  padding: clamp(1rem, 2vw, 1.75rem) clamp(1rem, 2.2vw, 1.85rem) 0 clamp(0.85rem, 1.6vw, 1.25rem);
-  background: var(--hero-navy);
-  z-index: 1;
-}
-
-.hero__media {
-  position: relative;
-  min-width: 0;
-  overflow: hidden;
-  background: var(--hero-navy);
-}
-
-/* Height-fill + right-align clips left navy blank; keeps diagonal abutting copy */
-.hero__banner-img {
+.hero__banner {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero__banner img {
+  width: 100%;
   height: 100%;
-  width: auto;
   max-width: none;
-  object-fit: unset;
+  object-fit: cover;
+  /* Bias to people on the right; leave left darker zone for copy */
+  object-position: 72% 42%;
   transform: none;
   filter: none;
 }
 
+.hero__veil {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      105deg,
+      rgba(30, 43, 61, 0.92) 0%,
+      rgba(30, 43, 61, 0.78) 14%,
+      rgba(30, 43, 61, 0.28) 48%,
+      rgba(30, 43, 61, 0.06) 60%
+    ),
+    linear-gradient(
+      to top,
+      rgba(30, 43, 61, 0.5) 0%,
+      transparent 42%
+    );
+}
 
+.hero__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 38rem;
+}
 
 .hero h1 {
-  margin: 0 0 0.65rem;
+  margin: 0 0 0.85rem;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(1.8rem, 1.55rem + 1.15vw, 2.5rem);
-  line-height: 1.14;
-  letter-spacing: -0.035em;
+  font-size: clamp(2.1rem, 1.6rem + 2.2vw, 3.35rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
   color: #fff;
   text-wrap: balance;
-  max-width: 100%;
+  max-width: 18ch;
 }
 
 .hero__accent {
@@ -213,19 +203,18 @@ a {
 }
 
 .hero__lede {
-  margin: 0 0 1rem;
-  color: rgba(236, 242, 250, 0.92);
-  font-size: clamp(0.86rem, 0.8rem + 0.25vw, 0.98rem);
-  line-height: 1.45;
-  max-width: 28rem;
-  text-shadow: none;
+  margin: 0 0 1.35rem;
+  color: rgba(236, 242, 250, 0.94);
+  font-size: clamp(1rem, 0.92rem + 0.35vw, 1.12rem);
+  line-height: 1.55;
+  max-width: 34rem;
 }
 
 .hero__actions {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.65rem;
+  gap: 0.75rem;
 }
 
 .btn {
@@ -234,10 +223,10 @@ a {
   justify-content: center;
   text-decoration: none;
   font-weight: 650;
-  font-size: 0.92rem;
+  font-size: 0.98rem;
   letter-spacing: -0.01em;
   border-radius: 0.65rem;
-  padding: 0.78rem 1.25rem;
+  padding: 0.9rem 1.4rem;
   transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
 }
 
@@ -254,76 +243,41 @@ a {
 
 .hero__trust {
   margin: 0;
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   color: rgba(255, 255, 255, 0.78);
   letter-spacing: 0.01em;
   text-align: left;
   line-height: 1.4;
-  max-width: 22rem;
 }
 
-/* Narrow desktop / tablet: still centered row, slightly tighter type */
-@media (max-width: 1100px) and (min-width: 901px) {
-  .hero {
-    --hero-shell-max: 1080px;
-  }
-
-  .hero h1 {
-    font-size: clamp(1.65rem, 1.4rem + 0.95vw, 2.15rem);
-  }
-
-  .hero__lede {
-    font-size: 0.88rem;
-  }
-}
-
-/* Stack when text column would be too cramped */
 @media (max-width: 900px) {
   .hero {
-    padding: 1.35rem 0 0;
+    min-height: min(68vh, 560px);
+    padding-top: clamp(1.75rem, 4vh, 2.5rem);
   }
 
-  .hero__shell {
-    width: min(calc(100vw - 2rem), var(--hero-shell-max));
-    height: auto;
-    max-height: none;
-    grid-template-columns: 1fr;
-    gap: 0;
+  .hero__banner img {
+    object-position: 78% 40%;
   }
 
-  .hero__content {
-    padding: 0.35rem 0.15rem 0;
+  .hero__veil {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(30, 43, 61, 0.72) 0%,
+        rgba(30, 43, 61, 0.55) 42%,
+        rgba(30, 43, 61, 0.35) 100%
+      ),
+      linear-gradient(
+        to top,
+        rgba(30, 43, 61, 0.55) 0%,
+        transparent 45%
+      );
   }
 
   .hero h1 {
-    font-size: clamp(1.65rem, 6.5vw, 2.05rem);
-  }
-
-  .hero__lede {
-    font-size: 0.94rem;
-    max-width: 36rem;
-  }
-
-  .hero__media {
-    /* Portrait strip only; fixed safe aspect matching cropped art */
-    width: 100%;
-    aspect-ratio: var(--hero-art-aspect);
-    height: auto;
-    border-radius: 0;
-  }
-
-  .hero__banner-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero__media {
-    aspect-ratio: 1.72;
+    max-width: 14ch;
+    font-size: clamp(1.85rem, 7vw, 2.45rem);
   }
 }
 
